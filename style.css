@@ -5,6 +5,7 @@
     font-family: 'Android';
     src: url('fontes/idroid.otf') format('opentype'); 
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -36,9 +37,7 @@ header {
 
 header > h1 {
     color: white;
-    font-family: var(--font-destaque);
-    font-size: 3em;
-    font-weight: normal;
+    font: normal 3em var(--font-destaque);
     margin-bottom: 10px;
     text-shadow: 2px 2px 20px black;
 }
@@ -46,11 +45,10 @@ header > h1 {
 header > p {
     font-family: var(--font-padrao);
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     max-width: 500px;
     margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 nav {
@@ -82,7 +80,6 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.358);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
 }
 
 .bugdroid {
@@ -98,6 +95,7 @@ div.video {
     padding-bottom: 55%;
     position: relative;
 }
+
 .video > iframe {
     position: absolute;
     top: 5%;
@@ -145,6 +143,7 @@ main a {
     background-color: var(--cor2);
     padding: 2px 6px;
 }
+
 main a:hover {
     text-decoration: underline;
     color: var(--cor5);
